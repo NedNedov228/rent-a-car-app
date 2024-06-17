@@ -1,0 +1,70 @@
+.tarifs-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.car-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+    flex: 1 1 30%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-container {
+    height: 200px; /* Set a fixed height for the image container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+}
+
+.car-image {
+    max-height: 100%; /* Make sure the image fits within the container */
+    max-width: 100%;
+}
+
+.car-details {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.car-details h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.car-details p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+.divider {
+    margin: 2em;
+    background-color: transparent;
+}

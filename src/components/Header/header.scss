@@ -1,0 +1,68 @@
+@import "../../colors/colors";
+
+.header {
+  position: absolute;
+  width: 50%;
+  height: 100px;
+  overflow: auto;
+
+  &__text {
+    position: absolute;
+    color: $green;
+    margin-left: 4.5rem;
+    font-size: 30px;
+    font-weight: 700;
+    display: inline;
+  }
+
+  &__location-text {
+    position: absolute;
+    display: inline;
+    margin-top: 40px;
+    color: $grey;
+    font-size: 14px;
+    font-weight: 400;
+    right: 4.5rem;
+  }
+
+  &__logo {
+    position: relative;
+    right: 5px;
+    top: 4px
+  }
+}
+
+@media (max-width: 1439px) {
+  .header {
+    width: 60%;
+  }
+}
+@media (max-width: 1023px) {
+  .header {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    margin-top: 17px;
+    margin-left: 26px;
+    width: calc(100% - 26px);
+
+    &__text {
+      display: block;
+      float: none;
+      position: absolute;
+      right: 16px;
+      margin: 0;
+    }
+
+    &__location-text {
+      display: block;
+      float: none;
+      position: absolute;
+      right: 15px;
+      margin-top: 35px;
+    }
+  }
+}
+
